@@ -1,0 +1,36 @@
+---
+layout: auth/auth-layout
+themeTitle: ModularAdmin
+---
+<div class="auth-container">
+	<div class="card">
+		<header class="auth-header">
+			<h1 class="auth-title">
+				{{> _common/logo/logo}}
+				{{themeTitle}}
+			</h1>
+		</header>
+		<div class="auth-content">
+			<p class="text-center">KHÔI PHỤC MẬT KHẨU</p>
+			<p class="text-muted text-center"><small>Vui lòng nhập địa chỉ Email để khôi phục mật khẩu.</small></p>
+			<form id="reset-form"  action="/index.html" method="GET" novalidate="">
+				<div class="form-group">
+					<label for="email1" >Email</label>
+					<input type="email" class="form-control underlined" name="email1" id="email1" placeholder="Địa chỉ Email" required>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-block btn-primary">KHÔI PHỤC</button>
+				</div>
+				<div class="form-group clearfix">
+					<a class="pull-left" href="login.html">Quay về trang Đăng nhập</a>
+					<a class="pull-right" href="signup.html">Đăng ký</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="text-center">
+		<a href="index.html" class="btn btn-secondary btn-sm">
+			<i class="fa fa-arrow-left"></i> QUAY LẠI DASHBOARD
+		</a>
+	</div>
+</div>

@@ -1,0 +1,228 @@
+<aside class="sidebar">
+	<div class="sidebar-container">
+
+		{{> app/_common/sidebar/header/header}}
+
+		<nav class="menu">
+			<ul class="sidebar-menu metismenu" id="sidebar-menu">
+
+				<li {{#is pagename "===" "dashboard"}}class="active"{{/is}} >
+					<a href="index.html">
+						<i class="fa fa-home"></i> Dashboard
+					</a>
+				</li>
+
+
+				<li {{#is pagename "in" "items-list,item-editor"}}class="active open"{{/is}} >
+
+					<a href="">
+						<i class="fa fa-th-large"></i> Quản lí sản phẩm
+						<i class="fa arrow"></i>
+					</a>
+
+					<ul class="sidebar-nav">
+						<li {{#is pagename "===" "items-list"}}class="active"{{/is}} >
+							<a href="items-list.html">
+								Danh sách sản phẩm
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "item-editor"}}class="active"{{/is}} >
+							<a href="item-editor.html">
+								Chỉnh sửa thông tin sản phẩm
+							</a>
+						</li>
+					</ul>
+				</li>
+
+				<li {{#is pagename "in" "users-list,user-editor"}}class="active open"{{/is}} >
+
+					<a href="">
+						<i class="fa fa-th-large"></i> Quản lí người dùng
+						<i class="fa arrow"></i>
+					</a>
+
+					<ul class="sidebar-nav">
+						<li {{#is pagename "===" "users-list"}}class="active"{{/is}} >
+							<a href="users-list.html">
+								Danh sách người dùng
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "user-editor"}}class="active"{{/is}} >
+							<a href="user-editor.html">
+								Chỉnh sửa thông tin người dùng
+							</a>
+						</li>
+					</ul>
+				</li>
+
+				<li {{#is pagename "in" "charts-flot,charts-morris"}}class="active open"{{/is}} >
+					<a href="">
+						<i class="fa fa-area-chart"></i> Biểu đồ
+						<i class="fa arrow"></i>
+					</a>
+
+					<ul class="sidebar-nav">
+						<li {{#is pagename "===" "charts-flot"}}class="active"{{/is}} >
+							<a href="charts-flot.html">
+								Biểu đồ Flot
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "charts-morris"}}class="active"{{/is}} >
+							<a href="charts-morris.html">
+								Biểu đồ Morris
+							</a>
+						</li>
+					</ul>
+				</li>
+
+				<li {{#is pagename "in" "static-tables,responsive-tables"}}class="active open"{{/is}} >
+					<a href="">
+						<i class="fa fa-table"></i> Bảng biểu
+						<i class="fa arrow"></i>
+					</a>
+
+					<ul class="sidebar-nav">
+						<li {{#is pagename "===" "static-tables"}}class="active"{{/is}} >
+							<a href="static-tables.html">
+								Bảng biểu cố định
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "responsive-tables"}}class="active"{{/is}} >
+							<a href="responsive-tables.html">
+								Bảng biểu Responsive
+							</a>
+						</li>
+
+					</ul>
+				</li>
+
+				<li {{#is pagename "===" "forms"}}class="active"{{/is}} >
+					<a href="forms.html">
+						<i class="fa fa-pencil-square-o"></i> Mẫu đơn
+					</a>
+				</li>
+
+				<li {{#is pagename "in" "buttons,grid,icons,cards,typography"}}
+						class="active open"
+					{{/is}} >
+					<a href="">
+						<i class="fa fa-desktop"></i> Giao diện người dùng (UI Elements)
+						<i class="fa arrow"></i>
+					</a>
+
+					<ul class="sidebar-nav">
+						<li {{#is pagename "===" "buttons"}}class="active"{{/is}}>
+							<a href="buttons.html">
+								Buttons
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "cards"}}class="active"{{/is}}>
+							<a href="cards.html">
+								Cards
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "typography"}}class="active"{{/is}}>
+							<a href="typography.html">
+								Typography
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "icons"}}class="active"{{/is}}>
+							<a href="icons.html">
+								Icons
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "grid"}}class="active"{{/is}}>
+							<a href="grid.html">
+								Grid
+							</a>
+						</li>
+					</ul>
+				</li>
+
+				<li {{#is pagename "in" "login,signup,reset,error-404,error-500"}}
+						class="active open"
+					{{/is}} >
+
+					<a href="">
+						<i class="fa fa-file-text-o"></i> Trang mẫu
+						<i class="fa arrow"></i>
+					</a>
+
+					<ul class="sidebar-nav">
+						<li {{#is pagename "===" "login"}}class="active"{{/is}}>
+							<a href="login.html">
+								Đăng nhập
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "signup"}}class="active"{{/is}}>
+							<a href="signup.html">
+								Đăng ký
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "reset"}}class="active"{{/is}}>
+							<a href="reset.html">
+								Khôi phục mật khẩu
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "error-404"}}class="active"{{/is}}>
+							<a href="error-404.html">
+								Lỗi 404
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "error-404-alt"}}class="active"{{/is}}>
+							<a href="error-404-alt.html">
+								Lỗi 404 Global
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "error-500"}}class="active"{{/is}}>
+							<a href="error-500.html">
+								Lỗi 500
+							</a>
+						</li>
+
+						<li {{#is pagename "===" "error-500-alt"}}class="active"{{/is}}>
+							<a href="error-500-alt.html">
+								Lỗi 500 Global
+							</a>
+						</li>
+					</ul>
+				</li>
+
+			
+
+				<li {{#is pagename "===" "docs"}}class="active"{{/is}} >
+					<a href="screenful.html">
+						<i class="fa fa-bar-chart"></i> Agile Metrics <span class="label label-screenful">by Screenful</span>
+					</a>
+				</li>
+
+				<li {{#is pagename "===" "docs"}}class="active"{{/is}} >
+					<a href="https://github.com/modularcode/modular-admin-html">
+						<i class="fa fa-github-alt"></i> Theme Docs
+					</a>
+				</li>
+
+
+			</ul>
+		</nav>
+
+	</div>
+
+	{{> app/_common/sidebar/customize/customize}}
+
+</aside>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<div class="sidebar-mobile-menu-handle" id="sidebar-mobile-menu-handle"></div>

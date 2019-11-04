@@ -1,0 +1,68 @@
+---
+layout: auth/auth-layout
+themeTitle: ModularAdmin
+---
+<div class="auth-container">
+	<div class="card">
+		<header class="auth-header">
+			<h1 class="auth-title">
+				{{> _common/logo/logo}}
+				{{themeTitle}}
+			</h1>
+		</header>
+		<div class="auth-content">
+			<p class="text-center">ĐĂNG KÝ ĐỂ TRUY CẬP</p>
+			<form id="signup-form"  action="/index.html" method="GET" novalidate="">
+				<div class="form-group">
+					<label for="firstname" >Tên</label>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<input type="text" class="form-control underlined" name="firstname" id="firstname" placeholder="Nhập họ" required="">
+						</div>
+						<div class="col-sm-6">
+							<input type="text" class="form-control underlined" name="lastname" id="lastname" placeholder="Nhập tên" required="">
+						</div>
+					</div>
+
+				</div>
+				<div class="form-group">
+					<label for="email" >Email</label>
+					<input type="email" class="form-control underlined" name="email" id="email" placeholder="Nhập địa chỉ Email" required="">
+				</div>
+				<div class="form-group">
+					<label for="password" >Mật khẩu</label>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<input type="password" class="form-control underlined" name="password" id="password"
+									placeholder="Nhập mật khẩu" required="">
+						</div>
+						<div class="col-sm-6">
+							<input type="password" class="form-control underlined" name="retype_password" id="retype_password"
+								placeholder="Nhập lại mật khẩu" required="">
+						</div>
+					</div>
+
+				</div>
+				<div class="form-group">
+					<label for="agree">
+						<input class="checkbox" name="agree" id="agree" type="checkbox" required="">
+						<span>Đồng ý các điều khoản và <a href="#">chính sách</a></span>
+					</label>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-block btn-primary">Đăng ký</button>
+				</div>
+				<div class="form-group">
+					<p class="text-muted text-center">Bạn đã có tài khoản rồi? <a href="login.html">Login</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="text-center">
+		<a href="index.html" class="btn btn-secondary btn-sm">
+			<i class="fa fa-arrow-left"></i> QUAY LẠI DASHBOARD
+		</a>
+	</div>
+</div>
